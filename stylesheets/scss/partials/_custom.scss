@@ -1,5 +1,9 @@
 /* ------------------ Scaffolding styles ------------- */
 
-.page-content {background-color: #FFF;}
-.block-container {padding: 30px;}
-.sidebar {background-color: #F4F4F4;}
+html { 
+  background: url("../../images/background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
