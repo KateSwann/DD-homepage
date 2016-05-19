@@ -4,14 +4,14 @@
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        connect: {
-            server: {
-                options: {
-                    port: 9001,
-                    index: 'index.html'
-                }
-            }
-        },
+        // connect: {
+        //     server: {
+        //         options: {
+        //             port: 9001,
+        //             index: 'index.html'
+        //         }
+        //     }
+        // },
 
         sass: {
             options: {
@@ -65,5 +65,5 @@
     // -----------------------------------------
 
     grunt.registerTask('buildCss', ['sass']);
-    grunt.registerTask('default', ['buildCss','connect', 'watch']);
+    grunt.registerTask('default', ['buildCss', 'watch']);
 };
