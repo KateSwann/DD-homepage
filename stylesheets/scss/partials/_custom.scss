@@ -1,3 +1,6 @@
+$complementary-site-color: #F8E71C;
+
+
 /* ------------------ Scaffolding styles ------------- */
 
 html { 
@@ -8,21 +11,77 @@ html {
   background-size: cover;
 }
 
-.site-container {
-	padding: 40px 70px;
+@media #{$small-only} {
+	.site-container {padding: 40px 70px 165px;}
+	.language-link-list {margin-bottom: 45px;}
+	.contact-link-list {margin-top: 160px;}
+	.main-info-block {margin-top: 280px;}
+	.site-title-secondary {margin: 45px 0 116px;}
+}
+
+@media #{$medium-up} {
+	.site-container {padding: 75px 75px 100px;}
+	.language-link-list {margin-bottom: 55px;}
+	.contact-link-list {margin-top: 160px;}
+	.main-info-block {margin-top: 150px;}
+	.site-title-secondary {margin: 45px 0 0;}
+}
+
+@media #{$large-up} {
+	.contact-link-list {margin-top: 200px;}
+	.main-info-block {margin-top: 200px;}
 }
 
 
 /* ------------------ Typography ------------- */
+
+	h1 {line-height: 1.1;}
 
 @media #{$small-only} {
 	body {
 		background-color: gold;
 		font-size: 24px;
 	}
+	h1 {font-size: 68px;}
+	.language-link-list {font-size: 32px;}
+
 }
 
-.stress {color: #F8E71C;}
+
+@media #{$medium-up} {
+	h1 {font-size: calc(68px + 10%);}
+}
+
+@media #{$large-up} {
+	h1 {font-size: 84px;}
+}
+
+.stress {color: $complementary-site-color;}
+
+
+
+
+/* ------------------ Elements ------------- */
+
+.language-link-list:first-child a {
+	margin-right: 7px;
+}
+
+.language-link-list a.active {
+	padding-bottom: 5px;
+	color: $complementary-site-color;
+	border-bottom: 2px solid $complementary-site-color;
+}
+
+
+
+
+/* ------------------ Buttons ------------- */
+
+@media #{$small-only} {
+    @include button-size($padding: rem-calc(90));
+
+}
 
 ///
 /// Viewport sized typography with minimum and maximum values
@@ -40,33 +99,33 @@ html {
 ///                 minumum of 35px and maximum of 150px
 ///  @include responsive-font(5vw, 35px, 150px, 50px);
 ///
-@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
-  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
-  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
-  $min-breakpoint: $min / $responsive-unitless * 100;
+// @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+//   $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+//   $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+//   $min-breakpoint: $min / $responsive-unitless * 100;
   
-  @media (max-#{$dimension}: #{$min-breakpoint}) {
-    font-size: $min;
-  }
+//   @media (max-#{$dimension}: #{$min-breakpoint}) {
+//     font-size: $min;
+//   }
   
-  @if $max {
-    $max-breakpoint: $max / $responsive-unitless * 100;
+//   @if $max {
+//     $max-breakpoint: $max / $responsive-unitless * 100;
     
-    @media (min-#{$dimension}: #{$max-breakpoint}) {
-      font-size: $max;
-    }
-  }
+//     @media (min-#{$dimension}: #{$max-breakpoint}) {
+//       font-size: $max;
+//     }
+//   }
   
-  @if $fallback {
-    font-size: $fallback;
-  }
+//   @if $fallback {
+//     font-size: $fallback;
+//   }
   
-  font-size: $responsive;
-}
+//   font-size: $responsive;
+// }
 
-// ----------- DEMO -------------
+// // ----------- DEMO -------------
 
-h1 {
-  @include responsive-font(4.5vw, 68px, 82px);
-  line-height: 1.1;
-}
+// h1 {
+//   @include responsive-font(4.5vw, 68px, 82px);
+//   line-height: 1.1;
+// }

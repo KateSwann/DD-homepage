@@ -362,16 +362,16 @@ meta.foundation-mq-small {
   width: 0; }
 
 meta.foundation-mq-small-only {
-  font-family: "/only screen and (max-width: 40em)/";
+  font-family: "/only screen and (max-width: 60em)/";
   width: 0; }
 
 meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:40.0625em)/";
-  width: 40.0625em; }
+  font-family: "/only screen and (min-width:60.0625em)/";
+  width: 60.0625em; }
 
 meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:40.0625em) and (max-width:64em)/";
-  width: 40.0625em; }
+  font-family: "/only screen and (min-width:60.0625em) and (max-width:64em)/";
+  width: 60.0625em; }
 
 meta.foundation-mq-large {
   font-family: "/only screen and (min-width:64.0625em)/";
@@ -774,7 +774,7 @@ select {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     float: left; } }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 60.0625em) {
   .medium-push-0 {
     position: relative;
     left: 0;
@@ -1611,7 +1611,7 @@ select {
       clear: none; }
     .small-block-grid-12 > li:nth-of-type(12n+1) {
       clear: both; } }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 60.0625em) {
   .medium-block-grid-1 > li {
     list-style: none;
     width: 100%; }
@@ -1978,7 +1978,7 @@ button::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 60.0625em) {
   button, .button {
     display: inline-block; } }
 .button-group {
@@ -2102,7 +2102,7 @@ button::-moz-focus-inner {
       border-color: rgba(255, 255, 255, 0.5); }
     .button-group.stack-for-small > li:first-child button, .button-group.stack-for-small > li:first-child .button {
       border-left: 0; }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 60em) {
       .button-group.stack-for-small > li {
         display: block;
         margin: 0;
@@ -2178,7 +2178,7 @@ button::-moz-focus-inner {
       -webkit-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px; }
-  @media only screen and (min-width: 40.0625em) {
+  @media only screen and (min-width: 60.0625em) {
     .button-group.radius.stack-for-small > * {
       display: inline-block;
       margin: 0 -2px; }
@@ -2202,7 +2202,7 @@ button::-moz-focus-inner {
         -webkit-border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px; } }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 60em) {
     .button-group.radius.stack-for-small > * {
       display: block;
       margin: 0; }
@@ -2292,7 +2292,7 @@ button::-moz-focus-inner {
       -webkit-bottom-right-radius: 0.5625rem;
       border-bottom-left-radius: 0.5625rem;
       border-bottom-right-radius: 0.5625rem; }
-  @media only screen and (min-width: 40.0625em) {
+  @media only screen and (min-width: 60.0625em) {
     .button-group.round.stack-for-small > * {
       display: inline-block;
       margin: 0 -2px; }
@@ -2316,7 +2316,7 @@ button::-moz-focus-inner {
         -webkit-border-top-right-radius: 1000px;
         border-bottom-right-radius: 1000px;
         border-top-right-radius: 1000px; } }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 60em) {
     .button-group.round.stack-for-small > * {
       display: block;
       margin: 0; }
@@ -2755,8 +2755,8 @@ label.error {
   color: #f04124; }
 
 meta.foundation-mq-topbar {
-  font-family: "/only screen and (min-width:40.0625em)/";
-  width: 40.0625em; }
+  font-family: "/only screen and (min-width:60.0625em)/";
+  width: 60.0625em; }
 
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
@@ -2811,7 +2811,7 @@ meta.foundation-mq-topbar {
     margin-bottom: 0;
     padding-bottom: 0.4125rem;
     padding-top: 0.4125rem; }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 60em) {
       .top-bar .button, .top-bar button {
         position: relative;
         top: -1px; } }
@@ -3100,7 +3100,7 @@ meta.foundation-mq-topbar {
 .js-generated {
   display: block; }
 
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 60.0625em) {
   .top-bar {
     background: #333333;
     overflow: visible; }
@@ -3296,7 +3296,7 @@ meta.foundation-mq-topbar {
 .text-justify {
   text-align: justify !important; }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 60em) {
   .small-only-text-left {
     text-align: left !important; }
 
@@ -3320,7 +3320,7 @@ meta.foundation-mq-topbar {
 
   .small-text-justify {
     text-align: justify !important; } }
-@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+@media only screen and (min-width: 60.0625em) and (max-width: 64em) {
   .medium-only-text-left {
     text-align: left !important; }
 
@@ -3332,7 +3332,7 @@ meta.foundation-mq-topbar {
 
   .medium-only-text-justify {
     text-align: justify !important; } }
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 60.0625em) {
   .medium-text-left {
     text-align: left !important; }
 
@@ -3441,11 +3441,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008CBA;
+  color: #FFFFFF;
   line-height: inherit;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #dbdbdb; }
   a img {
     border: none; }
 
@@ -3484,7 +3484,7 @@ h1 {
   font-size: 2.125rem; }
 
 h2 {
-  font-size: 1.6875rem; }
+  font-size: 1.25rem; }
 
 h3 {
   font-size: 1.375rem; }
@@ -3542,13 +3542,13 @@ ul,
 ol,
 dl {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: inherit;
   line-height: 1.6;
   list-style-position: outside;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 0; }
 
 ul {
-  margin-left: 1.1rem; }
+  margin-left: 0; }
 
 /* Unordered Lists */
 ul li ul,
@@ -3559,13 +3559,13 @@ ul.square li ul, ul.circle li ul, ul.disc li ul {
   list-style: inherit; }
 ul.square {
   list-style-type: square;
-  margin-left: 1.1rem; }
+  margin-left: 0; }
 ul.circle {
   list-style-type: circle;
-  margin-left: 1.1rem; }
+  margin-left: 0; }
 ul.disc {
   list-style-type: disc;
-  margin-left: 1.1rem; }
+  margin-left: 0; }
 
 /* Ordered Lists */
 ol {
@@ -3646,7 +3646,7 @@ blockquote p {
   border: none;
   padding: 0 0.0625rem; }
 
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 60.0625em) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
 
@@ -3654,7 +3654,7 @@ blockquote p {
     font-size: 2.75rem; }
 
   h2 {
-    font-size: 2.3125rem; }
+    font-size: 1.25rem; }
 
   h3 {
     font-size: 1.6875rem; }
@@ -3731,23 +3731,74 @@ html {
   -o-background-size: cover;
   background-size: cover; }
 
-.site-container {
-  padding: 40px 70px; }
+@media only screen and (max-width: 60em) {
+  .site-container {
+    padding: 40px 70px 165px; }
 
+  .language-link-list {
+    margin-bottom: 45px; }
+
+  .contact-link-list {
+    margin-top: 160px; }
+
+  .main-info-block {
+    margin-top: 280px; }
+
+  .site-title-secondary {
+    margin: 45px 0 116px; } }
+@media only screen and (min-width: 60.0625em) {
+  .site-container {
+    padding: 75px 75px 100px; }
+
+  .language-link-list {
+    margin-bottom: 55px; }
+
+  .contact-link-list {
+    margin-top: 160px; }
+
+  .main-info-block {
+    margin-top: 150px; }
+
+  .site-title-secondary {
+    margin: 45px 0 0; } }
+@media only screen and (min-width: 64.0625em) {
+  .contact-link-list {
+    margin-top: 200px; }
+
+  .main-info-block {
+    margin-top: 200px; } }
 /* ------------------ Typography ------------- */
-@media only screen and (max-width: 40em) {
+h1 {
+  line-height: 1.1; }
+
+@media only screen and (max-width: 60em) {
   body {
     background-color: gold;
-    font-size: 24px; } }
+    font-size: 24px; }
+
+  h1 {
+    font-size: 68px; }
+
+  .language-link-list {
+    font-size: 32px; } }
+@media only screen and (min-width: 60.0625em) {
+  h1 {
+    font-size: calc(68px + 10%); } }
+@media only screen and (min-width: 64.0625em) {
+  h1 {
+    font-size: 84px; } }
 .stress {
   color: #F8E71C; }
 
-h1 {
-  font-size: 4.5vw;
-  line-height: 1.1; }
-  @media (max-width: 1511.11111px) {
-    h1 {
-      font-size: 68px; } }
-  @media (min-width: 1822.22222px) {
-    h1 {
-      font-size: 82px; } }
+/* ------------------ Elements ------------- */
+.language-link-list:first-child a {
+  margin-right: 7px; }
+
+.language-link-list a.active {
+  padding-bottom: 5px;
+  color: #F8E71C;
+  border-bottom: 2px solid #F8E71C; }
+
+/* ------------------ Buttons ------------- */
+@media only screen and (max-width: 60em) {
+  padding: 5.625rem 11.25rem 5.6875rem 11.25rem; }
