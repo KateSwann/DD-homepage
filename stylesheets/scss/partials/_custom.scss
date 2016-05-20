@@ -79,7 +79,9 @@ html {
 /* ------------------ Buttons ------------- */
 
 @media #{$small-only} {
-    @include button-size($padding: rem-calc(90));
+	.button {
+    	@include button-size($padding: rem-calc(14));
+	}
 
 }
 
