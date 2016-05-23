@@ -3731,60 +3731,75 @@ html {
   -o-background-size: cover;
   background-size: cover; }
 
+.site-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+.level {
+  position: absolute;
+  left: 0;
+  right: 0; }
+
+.level.one {
+  height: 12%;
+  top: 0; }
+
+.level.two {
+  height: 12%;
+  top: 12%; }
+
+.level.three {
+  height: 62%;
+  top: 24%; }
+
+.level.last {
+  height: 14%;
+  position: fixed;
+  bottom: 0; }
+
 @media only screen and (max-width: 60em) {
-  .site-container {
-    padding: 40px 70px 165px; }
-
   .language-link-list {
-    margin-bottom: 45px; }
-
-  .contact-link-list {
-    margin-top: 160px; }
-
-  .main-info-block {
-    margin-top: 280px; }
+    margin-top: 25px; }
 
   .site-title-secondary {
-    margin: 45px 0 116px; } }
+    margin: 2vh 0 7vh; }
+
+  .level {
+    padding-left: 70px;
+    padding-right: 70px; } }
 @media only screen and (min-width: 60.0625em) {
-  .site-container {
-    padding: 75px 75px 100px; }
-
   .language-link-list {
-    margin-bottom: 55px; }
-
-  .contact-link-list {
-    margin-top: 160px; }
-
-  .main-info-block {
-    margin-top: 150px; }
+    margin-top: 3vh; }
 
   .site-title-secondary {
-    margin: 45px 0 0; } }
-@media only screen and (min-width: 64.0625em) {
-  .contact-link-list {
-    margin-top: 200px; }
+    margin: 45px 0 0; }
 
-  .main-info-block {
-    margin-top: 200px; } }
+  .goto-portfolio {
+    margin-top: 37%; }
+
+  .level {
+    padding-left: 35px;
+    padding-right: 35px; } }
 /* ------------------ Typography ------------- */
 h1 {
   line-height: 1.1; }
 
 @media only screen and (max-width: 60em) {
   body {
-    background-color: gold;
     font-size: 24px; }
 
   h1 {
-    font-size: 68px; }
+    font-size: 8.5vw; }
 
   .language-link-list {
     font-size: 32px; } }
 @media only screen and (min-width: 60.0625em) {
   h1 {
-    font-size: calc(68px + 10%); } }
-@media only screen and (min-width: 64.0625em) {
+    font-size: 6vw; } }
+@media only screen and (min-width: 90.0625em) {
   h1 {
     font-size: 84px; } }
 .stress {
@@ -3803,4 +3818,5 @@ h1 {
 @media only screen and (max-width: 60em) {
   .button {
     padding: 0.875rem 1.75rem 0.9375rem 1.75rem;
-    font-size: 0.8125rem; } }
+    font-size: 0.8125rem;
+    font-size: 80%; } }

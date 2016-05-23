@@ -1,5 +1,9 @@
 $complementary-site-color: #F8E71C;
-
+$height-level-one: 12%;
+$height-level-two: 12%;
+$height-level-three: 62%;
+$height-level-last: 14%;
+$main-site-offset: 70px;
 
 /* ------------------ Scaffolding styles ------------- */
 
@@ -11,53 +15,68 @@ html {
   background-size: cover;
 }
 
+.site-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.level {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.level.one {height: $height-level-one;top: 0;}
+.level.two {height: $height-level-two; top: $height-level-one;}
+.level.three {height: $height-level-three; top: $height-level-one+$height-level-two;}
+.level.last {
+	height: $height-level-last;
+	position: fixed;
+	bottom: 0;
+}
+
 @media #{$small-only} {
-	.site-container {padding: 40px 70px 165px;}
-	.language-link-list {margin-bottom: 45px;}
-	.contact-link-list {margin-top: 160px;}
-	.main-info-block {margin-top: 280px;}
-	.site-title-secondary {margin: 45px 0 116px;}
+	.language-link-list {margin-top: 25px;}
+	.site-title-secondary {margin: 2vh 0 7vh;}
+	.level {
+		padding-left: $main-site-offset;
+		padding-right: $main-site-offset;
+	}
 }
 
 @media #{$medium-up} {
-	.site-container {padding: 75px 75px 100px;}
-	.language-link-list {margin-bottom: 55px;}
-	.contact-link-list {margin-top: 160px;}
-	.main-info-block {margin-top: 150px;}
+	.language-link-list {margin-top: 3vh;}
 	.site-title-secondary {margin: 45px 0 0;}
+	.goto-portfolio {margin-top: 37%;}
+	.level {
+		padding-left: $main-site-offset/2 ;
+		padding-right: $main-site-offset/2 ;
+	}
 }
-
-@media #{$large-up} {
-	.contact-link-list {margin-top: 200px;}
-	.main-info-block {margin-top: 200px;}
-}
-
 
 /* ------------------ Typography ------------- */
 
-	h1 {line-height: 1.1;}
+h1 {line-height: 1.1;}
 
 @media #{$small-only} {
-	body {
-		background-color: gold;
-		font-size: 24px;
-	}
-	h1 {font-size: 68px;}
+	body {font-size: 24px; }
+	h1 {font-size: 8.5vw;}
+
 	.language-link-list {font-size: 32px;}
-
 }
-
 
 @media #{$medium-up} {
-	h1 {font-size: calc(68px + 10%);}
+	h1 {font-size: 6vw;}
 }
 
-@media #{$large-up} {
+@media #{$xlarge-up} {
 	h1 {font-size: 84px;}
 }
 
 .stress {color: $complementary-site-color;}
-
 
 
 
@@ -75,59 +94,12 @@ html {
 
 
 
-
 /* ------------------ Buttons ------------- */
 
 @media #{$small-only} {
 	.button {
     	@include button-size($padding: rem-calc(14));
+    	font-size: 80%;
 	}
 
 }
-
-///
-/// Viewport sized typography with minimum and maximum values
-///
-/// @author Eduardo Boucas (@eduardoboucas)
-///
-/// @param {Number}   $responsive  - Viewport-based size
-/// @param {Number}   $min         - Minimum font size (px)
-/// @param {Number}   $max         - Maximum font size (px)
-///                                  (optional)
-/// @param {Number}   $fallback    - Fallback for viewport-
-///                                  based units (optional)
-///
-/// @example scss - 5vw font size (with 50px fallback), 
-///                 minumum of 35px and maximum of 150px
-///  @include responsive-font(5vw, 35px, 150px, 50px);
-///
-// @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
-//   $responsive-unitless: $responsive / ($responsive - $responsive + 1);
-//   $dimension: if(unit($responsive) == 'vh', 'height', 'width');
-//   $min-breakpoint: $min / $responsive-unitless * 100;
-  
-//   @media (max-#{$dimension}: #{$min-breakpoint}) {
-//     font-size: $min;
-//   }
-  
-//   @if $max {
-//     $max-breakpoint: $max / $responsive-unitless * 100;
-    
-//     @media (min-#{$dimension}: #{$max-breakpoint}) {
-//       font-size: $max;
-//     }
-//   }
-  
-//   @if $fallback {
-//     font-size: $fallback;
-//   }
-  
-//   font-size: $responsive;
-// }
-
-// // ----------- DEMO -------------
-
-// h1 {
-//   @include responsive-font(4.5vw, 68px, 82px);
-//   line-height: 1.1;
-// }
