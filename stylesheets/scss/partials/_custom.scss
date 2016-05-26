@@ -90,9 +90,20 @@ h1 {line-height: 1.1;}
 	padding-bottom: 5px;
 	color: $complementary-site-color;
 	border-bottom: 2px solid $complementary-site-color;
+	cursor: default;
 }
 
+.lulz {
+	display: inline-block;
+	position: relative;
+}
 
+.lulz::before {
+    content: "—";
+    color: $complementary-site-color;
+    left: -25px;
+    position: absolute;
+}
 
 /* ------------------ Buttons ------------- */
 
