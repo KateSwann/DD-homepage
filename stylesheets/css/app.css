@@ -2178,6 +2178,10 @@ html {
   .level {
     padding-left: 35px;
     padding-right: 35px; } }
+@media (max-width: 610px) {
+  .contact-link-list > div {
+    text-align: center !important;
+    width: 100% !important; } }
 /* ------------------ Typography ------------- */
 h1 {
   line-height: 1.1; }
