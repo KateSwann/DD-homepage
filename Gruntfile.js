@@ -3,15 +3,34 @@
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        
+        // browserSync: {
+        //     bsFiles: {
+        //         src : 'stylesheets/css/*.css'
+        //     },
 
-        // connect: {
-        //     server: {
-        //         options: {
-        //             port: 9001,
-        //             index: 'index.html'
+        //     options: {
+        //         server: {
+        //             baseDir: "./",
+        //             index: "index.html",
+        //             port: 3001
         //         }
         //     }
         // },
+
+        browserSync: {
+            bsFiles: {
+                src : 'stylesheets/css/*.css'
+            },
+
+            options: {
+                watchTask: true,
+                
+                server: {
+                    baseDir: "./"
+                }
+            }
+        },
 
         sass: {
             options: {
@@ -57,7 +76,8 @@
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-browser-sync');
+    // grunt.loadNpmTasks('grunt-contrib-connect');
 
 
     // -----------------------------------------
@@ -65,5 +85,5 @@
     // -----------------------------------------
 
     grunt.registerTask('buildCss', ['sass']);
-    grunt.registerTask('default', ['buildCss', 'watch']);
+    grunt.registerTask('default', ['buildCss', 'browserSync', 'watch']);
 };
