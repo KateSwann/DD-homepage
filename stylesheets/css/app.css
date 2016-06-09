@@ -2182,6 +2182,17 @@ html {
   .contact-link-list > div {
     text-align: center !important;
     width: 100% !important; } }
+/* ------------------ Media for mobile devices ------------- */
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .level {
+    position: static !important;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  body,
+  h2,
+  .language-link-list {
+    font-size: 100% !important; } }
 /* ------------------ Typography ------------- */
 h1 {
   line-height: 1.1; }
