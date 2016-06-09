@@ -2183,7 +2183,7 @@ html {
     text-align: center !important;
     width: 100% !important; } }
 /* ------------------ Media for mobile devices ------------- */
-@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+@media only screen and (max-width: 375px) {
   .level {
     position: static !important;
     padding-left: 10px;

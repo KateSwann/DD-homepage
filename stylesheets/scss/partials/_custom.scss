@@ -16,69 +16,72 @@ html {
 }
 
 .site-container {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .level {
-	position: absolute;
-	left: 0;
-	right: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .level.one {height: $height-level-one;top: 0;}
 .level.two {height: $height-level-two; top: $height-level-one;}
 .level.three {height: $height-level-three; top: $height-level-one+$height-level-two;}
 .level.last {
-	height: $height-level-last;
-	position: fixed;
-	bottom: 0;
+    height: $height-level-last;
+    position: fixed;
+    bottom: 0;
 }
 
 @media #{$small-only} {
-	.language-link-list {margin-top: 25px;}
-	.site-title-secondary {margin: 2vh 0 7vh;}
-	.level {
-		padding-left: $main-site-offset;
-		padding-right: $main-site-offset;
-	}
+    .language-link-list {margin-top: 25px;}
+    .site-title-secondary {margin: 2vh 0 7vh;}
+    .level {
+        padding-left: $main-site-offset;
+        padding-right: $main-site-offset;
+    }
 }
 
 @media #{$medium-up} {
-	.language-link-list {margin-top: 3vh;}
-	.site-title-secondary {margin: 45px 0 0;}
-	.goto-portfolio {margin-top: 37%;}
-	.level {
-		padding-left: $main-site-offset/2 ;
-		padding-right: $main-site-offset/2 ;
-	}
+    .language-link-list {margin-top: 3vh;}
+    .site-title-secondary {margin: 45px 0 0;}
+    .goto-portfolio {margin-top: 37%;}
+    .level {
+        padding-left: $main-site-offset/2 ;
+        padding-right: $main-site-offset/2 ;
+    }
 }
 
 @media (max-width: 610px) {
-	.contact-link-list > div {
-	   text-align: center !important;
-	   width: 100% !important;
-	}
+    .contact-link-list > div {
+       text-align: center !important;
+       width: 100% !important;
+    }
 }
 
 
 /* ------------------ Media for mobile devices ------------- */
 
-@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+// @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+
+// @media only screen and (max-width:768px) {
+@media only screen and (max-width:375px) {
     .level {
-    	position: static !important;
-    	padding-left: 10px;
-    	padding-right: 10px;
+        position: static !important;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     body,
     h2,
     .language-link-list {
-	    font-size: 100% !important;
-	}
+        font-size: 100% !important;
+    }
 }
 
 
@@ -87,18 +90,18 @@ html {
 h1 {line-height: 1.1;}
 
 @media #{$small-only} {
-	body {font-size: 24px; }
-	h1 {font-size: 8.5vw;}
+    body {font-size: 24px; }
+    h1 {font-size: 8.5vw;}
 
-	.language-link-list {font-size: 32px;}
+    .language-link-list {font-size: 32px;}
 }
 
 @media #{$medium-up} {
-	h1 {font-size: 6vw;}
+    h1 {font-size: 6vw;}
 }
 
 @media #{$xlarge-up} {
-	h1 {font-size: 84px;}
+    h1 {font-size: 84px;}
 }
 
 .stress {color: $complementary-site-color;}
@@ -108,19 +111,19 @@ h1 {line-height: 1.1;}
 /* ------------------ Elements ------------- */
 
 .language-link-list:first-child a {
-	margin-right: 7px;
+    margin-right: 7px;
 }
 
 .language-link-list a.active {
-	padding-bottom: 5px;
-	color: $complementary-site-color;
-	border-bottom: 2px solid $complementary-site-color;
-	cursor: default;
+    padding-bottom: 5px;
+    color: $complementary-site-color;
+    border-bottom: 2px solid $complementary-site-color;
+    cursor: default;
 }
 
 .lulz {
-	display: inline-block;
-	position: relative;
+    display: inline-block;
+    position: relative;
 }
 
 .lulz::before {
@@ -133,9 +136,9 @@ h1 {line-height: 1.1;}
 /* ------------------ Buttons ------------- */
 
 @media #{$small-only} {
-	.button {
-    	@include button-size($padding: rem-calc(14));
-    	font-size: 80%;
-	}
+    .button {
+        @include button-size($padding: rem-calc(14));
+        font-size: 80%;
+    }
 
 }

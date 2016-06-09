@@ -25,9 +25,14 @@
 
             options: {
                 watchTask: true,
+                port: 8080,
                 
                 server: {
                     baseDir: "./"
+                },
+
+                ui: {
+                    port: 8081
                 }
             }
         },
